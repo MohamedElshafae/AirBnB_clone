@@ -212,8 +212,8 @@ class HBNBCommand(cmd.Cmd):
                         att = json.loads(dictionary.replace("'", '"'))
                         for key, value in att.items():
                             self.do_update(class_name + " " +
-                                           instance_id + " " +
-                                           key + " " + str(value))
+                                            instance_id + " " +
+                                            key + " " + str(value))
 
                     else:
                         # <class name>.update
@@ -221,8 +221,8 @@ class HBNBCommand(cmd.Cmd):
                         attr_name = args[1]
                         attr_value = args[2]
                         self.do_update(class_name + " " +
-                                       instance_id + " " +
-                                       attr_name + " " + attr_value)
+                                        instance_id + " " +
+                                        attr_name + " " + attr_value)
 
 
 if __name__ == '__main__':
